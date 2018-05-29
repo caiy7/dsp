@@ -10,46 +10,62 @@ Please follow and complete the free online [Bash Scripting Tutorial](https://rya
 
 Here's a list of items with which you should be familiar:  
 * show current working directory path
-```
-pwd
-```
 * creating a directory
-```
-mkdir new_directory
-```
-* deleting a directory 
-to delete an empty directory
-```
-rmdir directory_name
-```
-to delete a directory and all files inside the directory
-```
-rm -r dirctory_name
-```
+* deleting a directory
 * creating a file using `touch` command
-```
-touch file_name
-```
 * deleting a file
-```
-rm file_name
-```
 * renaming a file
-```
-mv old_file new_file
-```
 * listing hidden files 
-```
-ls -ld .* | grep '^[^d]'
-```
 * copying a file from one directory to another
-```
-cp dir1/file_name dir2
-```
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * show current working directory path
+> > ```
+> > pwd
+> > ```
+> > * creating a directory
+> > ```
+> > mkdir new_directory
+> > ```
+> > * deleting a directory (empty directory)
+> > ```
+> > rmdir directory_name
+> > ```
+> > * deleting a directory (including all the  
+> > files inside the directory)
+> > ```
+> > rm -r directory_name
+> > ```
+> > * creating a file using `touch` command
+> > ```
+> > touch file_name
+> > ```
+> > * deleting a file
+> > ```
+> > rm file_name
+> > ```
+> > * renaming a file
+> > ```
+> > mv old_file new_file
+> > ```
+> > * listing hidden files 
+> > ```
+> > ls -ld .* | grep '^[^d]'
+> > ```
+> > * copying a file from one directory to another
+> > ```
+> > cp dir1/file_name dir2
+> > ```
+> > * show file content
+> > ```
+> > less file_name
+> > ```
+> > * show file name of a given path
+> > ```
+> > basename path_name
+> > ```
+
 
 ---
 
@@ -64,7 +80,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` list all the files and directories in the current directory. Hidden files or direcgtories are not shown.  
+> > `ls -a` list all the files and directories, including all the hidden directoris and files (whose names begin with a dot.)  
+> > `ls -l` list all the visible files and directories in long format, including information on file permission, size, owner, time of last modification and etc.  
+> > `ls -lh` list all the visible files and directories in long format. Sizes are listed with unit suffixes: B, K, M, G and etc.  
+> > `ls -lah` list all the files and directories including the hidden ones in long format and list size with unit suffixes.  
+> > `ls -t` list all the files and directories primarily sorted by last modified time (from most recently modified first), secondarily sorted by operand in lexicographical order.  
+> > `ls -Glp` list all the files and directories in long format. All the directories has a '/' after the directory name and are shown in color.  
 
 ---
 
@@ -72,7 +94,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. `ls -1` list each file or directory on a line.
+> > 2. `ls -m` separate file/directory names with ','.  
+> > 3. `ls -r` list files and directories in reverse order.  
+> > 4. `ls -R` list content in the subdirectores as well.  
+> > 5. `ls -x` list files/directories by rows 
 
 ---
 
@@ -80,7 +106,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` takes input from stdin as the argument for a command. For example, if we would like to check the number of lines in all the .txt files in a directory, we can use 
+> > ```
+> > ls *.txt | xargs wc -l 
+> > ```
 
  
 
