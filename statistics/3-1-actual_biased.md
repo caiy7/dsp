@@ -30,4 +30,4 @@
 >> >>> thinkplot.Pmfs([pmf,biased_pmf])
 >> >>> thinkplot.Config(xlabel = 'number of children in household', ylabel = 'PMF')
 >> ```
->> <img src = 'img/chp3_1.png'>
+>> <img src = '../img/chp3_1.png'>
