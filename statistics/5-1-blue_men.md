@@ -12,7 +12,7 @@
 >> ```
 >> 177.8 185.42
 >> ```
->> Use `scipy.stats.norm` to represent a normal distribution with $\mu$ = 178 and $\sigma$ = 7.7. Then get the CDF at `low` (5'10) and `high`(6'1)
+>> Use `scipy.stats.norm` to represent a normal distribution with μ = 178 and 𝜎 = 7.7. Then get the CDF at `low` (5'10) and `high`(6'1)
 >> ```python
 >> >>> import scipy.stats
 >> >>> dist = scipy.stats.norm(loc=178, scale=7.7)
