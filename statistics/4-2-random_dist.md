@@ -11,7 +11,8 @@
 >> >>> thinkplot.Config(xlabel = 'number', ylabel = 'PMF')
 >> ```
 >> <img src = '../img/chp4_2pmf.png'>  
->> The PMF plot is hard to read, if the data is not binned. Try CDF:
+>> 
+>>The PMF plot is hard to read, if the data is not binned. Try CDF:
 >>
 >> ```python
 >> >>> cdf = thinkstats2.Cdf(numbers, label = 'random numbers')
@@ -19,5 +20,6 @@
 >> >>> thinkplot.Config(xlabel = 'number', ylabel = 'CDF')
 >> ```
 >> <img src = '../img/chp4_2cdf.png'>   
->> The CDF plot shows a straight line, indicating the distribution is uniform. 
+>> 
+>>The CDF plot shows a straight line, indicating the distribution is uniform. 
 
