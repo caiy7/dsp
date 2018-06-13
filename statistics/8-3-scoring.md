@@ -18,7 +18,7 @@
 >> ...         goal += 1
 >> ...     return goal - 1 
 >> ```
->> Write a function `SimulateExp` to iterate the game with `lam` = 2 a given time:
+>> Write a function `SimulateExp` to iterate the game with `lam` = 2 and times of iteration m:
 >> ```python
 >> >>> def SimulateExp(m = 1000):
 >> ...     '''
