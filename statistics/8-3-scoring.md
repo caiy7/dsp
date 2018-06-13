@@ -18,7 +18,8 @@
 >> ...         goal += 1
 >> ...     return goal - 1 
 >> ```
->> Write a function `SimulateExp` to iterate the game with `lam` = 2 and times of iteration m:
+>> Write a function `SimulateExp` to iterate the game with `lam` = 2 and times of iteration m:  
+
 >> ```python
 >> >>> def SimulateExp(m = 1000):
 >> ...     '''
@@ -30,12 +31,31 @@
 >> ...         Ls.append(SimulateGame1(2))
 >> ...     print('RMSE of L is', RMSE(Ls, 2))
 >> ...     print('Mean error of L is', MeanError(Ls, 2))
+>> ...     return Ls
 >> ```
+>> Try 1000 times iteration, plot the sampling distribution and estimate 90% confidence interval. 
+>> ```python
+>> >>> ls = SimulateExp(1000)
+>> >>> cdf = thinkstats2.Cdf(ls)
+>> >>> lower = cdf.Percentile(5)
+>> >>> higher = cdf.Percentile(95)
+>> >>> print('The confidence interval is', lower, higher)
+>> >>> thinkplot.Cdf(cdf)
+>> >>> thinkplot.Config(xlabel = 'L', ylabel = 'CDF', title = 'sampling distribution of L', 
+>> ...                 legend = False)
+>> ```
+>> ```
+>> RMSE of L is 1.443260198301055
+>> Mean error of L is -0.055
+>> The confidence interval is 0 5
+>> ```
+>> <img src = '../img/chp8_3.png'>
+>> 
 >> Try different number of iterations:
 >> ```python
 >> >>> for i in [1000, 10000, 100000, 1000000]:
 >> ...     print(i)
->> ...     SimulateExp(i)
+>> ...     SimulateExp(i);
 >> ```
 >> ```
 >> 1000
