@@ -86,14 +86,21 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The prior is the proability of Elvis being an identical twin and the probality of him being a fraternal twin. In the case of identical twin, the twins have the same sex. Thus the likelihood of having a brother is 1. For the fratnernal twin, the other twin has the same chance to be male or female. So the likelihood of haveing a brother is 0.5. The prior (unnormalized), the likelyhood and the normalized posterior are summerized in the table below:  
+>> | | Prior(unnormalized) | Likelihood | Prior * Likehood | Posterier |  
+>> |---|:---:|:---:|:---:|:---:|
+>> | Identical | 1/300 | 1 | 1/300| 5/11 |
+>> | Fraternal | 1/125 | 1/2| 1/250| 6/11 |
+>> The probability that Elvis was an identical twin is 5/11, about 0.45. 
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Bayesian statistics starts with a prior distribution of hypotheses, informative or not. By updating the prior distribution with the likelihood of the data under each hypothesis, we obtain the posterior distribution of the hypothesis for further analysis 
+>> Frequetist uses hypothesis tests to accept or reject a hypothesis.  
+>> The major difference is that in Bayesian statistics, the hypotheses are presented with probabilities, while frequentist either accept or reject a hypothesis. The p-value used by frequentist depends on the experiment setup or the selected distribution. In Baysian statistics, due to 'swamping of prior', different priors may converge on similar posterior after updating the model with enough data. However, Bayesian statistics may require large computation compared to frequentist. 
 
 ---
 
